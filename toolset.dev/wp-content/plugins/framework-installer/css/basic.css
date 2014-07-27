@@ -1,0 +1,38 @@
+#icon-wpvdemo {
+    background: url(../embedded-views/res/img/views-32.png) no-repeat;
+}
+.wpcf-ajax-loading-small {
+    background: url(../embedded-types/resources/images/ajax-loader-small.gif) no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.wpvdemo-download-response {
+    margin-top: 10px;
+}
+
+.wpvdemo-green-check {
+    background: url(../images/checkmark-green.png) no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.wpvdemo-warning {
+    background: url(../embedded-types/resources/images/warning.png) no-repeat;
+    background-position: 10px center;
+    width:50%;
+}
+
+.wpvdemo-warning > p {
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.wpvdemo-error {
+    background-color : #FFEBE8;
+    border-color: #CC0000;
+    padding: 0 0.6em;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0.6em 0px;
+}
