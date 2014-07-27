@@ -1,0 +1,514 @@
+/*
+	This file contains styles for specific dialogs only.
+	General dialogs styles should go into dd-dialogs-general.css
+	General forms styles should go into dd-dialogs-forms.css
+ */
+
+/* ------------------*/
+/* Hiererchical tree */
+/* ------------------*/
+.tree,
+.tree ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.tree ul {
+	position: relative;
+	margin-left: -14px;
+}
+
+.tree ul ul {
+	margin: 10px 0 0 6px;
+}
+
+.tree ul:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 0;
+	border-left: 1px solid #ccc;
+	content: "";
+}
+
+.tree ul li:before {
+	position: absolute;
+	top: 12px;
+	left: 0;
+	display: block;
+	width: 12px;
+	height: 0;
+	border-top: 1px solid #ccc;
+	content: "";
+}
+
+.tree ul li.last:before,
+.tree ul li:last-child:before {
+	bottom: 0;
+	height: auto;
+	background: #fff;
+}
+
+.tree li {
+	position: relative;
+	margin: 0 0 10px 0;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 25px;
+}
+.tree>li:first-child {
+	font-size: 18px;
+}
+
+.tree li .tree-category-title {
+	margin: 0 0 10px -20px;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.tree li .item-name-wrap {
+	margin: 0;
+}
+
+.tree li .item-name-wrap a {
+	display: inline-block;
+	text-decoration: none;
+	line-height: 16px;
+}
+
+.tree li .contains-search-results > .item-name-wrap a {
+	color: #ccc;
+}
+
+.tree li .icon-info-sign,
+.tree li .icon-remove,
+.tree li .item-desc {
+	display: none;
+}
+
+.tree li .icon-remove,
+.tree li .icon-info-sign {
+	opacity: .6;
+}
+
+.tree li .icon-remove {
+	color: #b94a48;
+}
+
+.tree li .icon-remove:hover,
+.tree li .icon-info-sign:hover {
+	opacity: 1;
+}
+
+.tree li .item-desc {
+	position: relative;
+	margin: 0;
+	padding-left: 22px;
+}
+
+.tree ul ul li .item-desc {
+	padding-left: 0;
+}
+
+.tree ul .icon-info-sign.active,
+.tree ul .item-name-wrap:hover .icon-remove,
+.tree ul .item-name-wrap:hover .icon-info-sign {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	cursor: pointer;
+}
+
+.tree li .tree-item-title i {
+	color: #999;
+}
+
+.tree li .item-type-icon {
+	display: inline-block;
+	margin-right: 2px;
+	max-width: 16px;
+	vertical-align: baseline;
+}
+
+.tree li i.icon-collapse-alt,
+.tree li i.icon-expand-alt,
+.tree li i.item-type-icon {
+	display: inline-block;
+	width: 16px;
+}
+
+.tree li .icon-expand-alt,
+.tree li .icon-collapse-alt {
+	opacity: .6;
+	cursor: pointer;
+}
+
+.tree li .icon-expand-alt:hover,
+.tree li .icon-collapse-alt:hover {
+	opacity: 1;
+}
+
+.tree .selected {
+	font-weight: bold;
+}
+
+.tree .item-preview {
+	display: none;
+	position: fixed;
+	margin: 0 0 0 40px;
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+/* Hiererchical tree */
+
+/* ---------- */
+/* Codemirror */
+/* ---------- */
+.code-editor {
+	clear: both;
+	margin: 0 0 15px 0;
+}
+
+	.code-editor-toolbar {
+		padding: 5px 2px 0 2px;
+		border: 1px solid #ccc;
+		border-width: 1px 1px 0 1px;
+		border-radius: 2px 2px 0 0;
+		background: #e5e5e5;
+		background: -moz-linear-gradient(top,  #e5e5e5 0%, #f4f4f4 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#f4f4f4));
+		background: -webkit-linear-gradient(top,  #e5e5e5 0%,#f4f4f4 100%);
+		background: -o-linear-gradient(top,  #e5e5e5 0%,#f4f4f4 100%);
+		background: -ms-linear-gradient(top,  #e5e5e5 0%,#f4f4f4 100%);
+		background: linear-gradient(to bottom,  #e5e5e5 0%,#f4f4f4 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f4f4f4',GradientType=0 );
+	}
+
+	.ddl-dialog .layout-css-editor .code-editor-toolbar {
+		height:20px;
+	}
+
+	.ddl-dialog .js-post-content-ct .code-editor-toolbar {
+		height:33px;
+	}
+
+	.ddl-dialog .layout-css-editor .CodeMirror {
+		border: solid 1px #ccc;
+		margin-left: 21px; /* .coremirror-bookmarks width */
+	}
+
+	.ddl-dialog .js-post-content-ct .CodeMirror {
+		border: solid 1px #ccc;
+		margin-left: 0px;
+	}
+
+	.ddl-form .code-editor-toolbar>ul>li {
+									float: left;
+									margin: 0 2px 5px 2px;
+									color: #666;
+									vertical-align: middle;
+									text-align: center;
+									cursor: pointer;
+								}
+	.ddl-form .code-editor-toolbar>ul:after {
+		clear: both;
+	}
+
+
+/* Codemirror END */
+
+/* --------------------- */
+/* Codemirror bookmarks  */
+/* --------------------- */
+.codemirror-bookmarks {
+	position: relative;
+	margin: 0;
+	width: 20px;
+	height: 300px;
+	border: 1px solid #ccc;
+	border-width: 1px 0 1px 1px;
+	float: left;
+}
+
+	.codemirror-bookmarks li {
+		position: absolute;
+		right: 0;
+		left: 0;
+		display: block;
+		margin: 0;
+		height: 3px;
+		background: #0074a2;
+		text-indent: 100%;
+		white-space: nowrap;
+	}
+	.codemirror-bookmarks li.active,
+	.codemirror-bookmarks li:hover {
+		left: -4px;
+		background: #0074a2;
+		cursor: default;
+		transition: left 0.1s;
+	}
+
+	.codemirror-bookmarks li:after {
+		position: absolute;
+		left: 30px;
+		display: block;
+		margin-top: -12px;
+		width: 0;
+		height: 0;
+		background: rgba(0,0,0,.8);
+		color: #fff;
+		content: attr(data-tooltip);
+		text-align: left;
+		text-indent: 0;
+		opacity: 0;
+	}
+
+	.codemirror-bookmarks li:hover:after {
+		padding: 5px;
+		width: auto;
+		height: auto;
+		opacity: 1;
+		transition: opacity .5s;
+		z-index: 5;
+	}
+/* Codemirror bookmarks  END */
+
+/* ----------------------------------- */
+/* Styles for new rop type selection   */
+/* ----------------------------------- */
+
+.presets-list.row-types li {
+	padding: 0;
+}
+
+.presets-list figure {
+	margin: 0;
+	padding: 10px;
+}
+
+	.presets-list figure:hover {
+		background-color: #ededed;
+	}
+
+	.presets-list figure.selected {
+		background-color: #ffda73;
+		border: solid 1px rgb(255, 188, 0);
+	}
+
+		.presets-list img {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.presets-list figure + .radio {
+			margin: 0 5px 0 10px;
+			padding: 5px;
+			font-size: 13px;
+		}
+
+
+
+
+/* ----- */
+/* TEMP  */
+/* ----- */
+
+/* TODO: I don't know what these styles are for and who has added them */
+.widget-top .widget-title-action {
+	display: inline-block;
+	float: left;
+}
+.ddl-dialog-widgets .widget-content {
+	text-align: left;
+}
+
+.js .widget .widget-top,
+.js .postbox h3 {
+	cursor:pointer;
+}
+
+.widget-top .widget-title {
+	display: inline-block;
+	float: left;
+	border: medium none;
+}
+
+.ddl-dialog .widget,
+.postbox,
+.stuffbox {
+	margin-bottom: 1px;
+	background: none repeat scroll 0 0 transparent;
+}
+
+.selected-widget-action {
+	margin-top: 6px!important;
+}
+
+.widget,
+.widget .widget-top,
+.postbox, .stuffbox {
+	border: none;
+	background:none;
+}
+
+.widget-cell-controls {
+	float: right;
+	width: 74%;
+}
+
+.widget-cell-controls p:first-child {
+	margin-top: 0;
+}
+
+.ddl-dialog .post-content-page {
+    width: 100% !important;
+}
+
+.ddl-dialog.ddl-dialog-video {
+	max-width: none;
+	width: auto;
+}
+
+.widget-cell-controls label {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* TEMP END */
+
+
+/* Styles to override WP widgets inputs in Layouts dialogs */
+
+.widget-cell-controls label,
+.widget-cell-controls .checkbox,
+.widget-cell-controls .radio {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.widget-cell-controls .checkbox,
+.widget-cell-controls .radio {
+	width: 16px;
+	margin-right: 3px;
+}
+
+.widget-cell-controls small {
+	display: block;
+	margin: 5px 0 0;
+	font-size: 10px;
+	color: #999;
+}
+
+.widget-cell-controls input[type=text] + br {
+	display: none;
+}
+ /* widgets overriding END */
+
+#ddl-select-element-box .icon-views {
+	margin-top: 3px;
+	vertical-align: -3px;
+	position : relative;
+	left : -4px;
+}
+
+#ddl-select-element-box input::-ms-clear {
+	display: none;
+}
+
+/* Child layout remove dialog */
+button.delete-child-layout-button{width:460px;}
+span.alert-child-layout{
+	border:none;
+	background-color: transparent;
+	color: #d00;
+	font-size:10px;
+	font-style: italic;
+}
+
+.child-layout-remove,
+.child-layout-delete {
+	margin-bottom: 22px;
+}
+/* Child layout remove dialog end*/
+
+/* Change Layout Use Dialog (assignment dialog box)*/
+
+.change-layout-use-section-title{}
+.change-layout-use-section-title-outer{}
+.change-layout-use-section-title-inner{margin-top:10px;font-weight:bold;margin-bottom:4px;}
+
+i.change-layout-use-section-title-icon-collapse{padding-left:6px;cursor:pointer;}
+.change-layout-use-section-title{cursor:pointer;}
+ul.change-layout-use-section{margin-top:6px;}
+div.alert-no-loops, div.alert-no-post-content{background:transparent;border:none;color:inherit;padding-bottom: 0;padding-top:1px;}
+div.alert-no-loops p, div.alert-no-post-content p{}
+div.alert-no-loops i.remove-alert-message,  div.alert-no-post-content i.remove-alert-message{position:absolute;top:2px;right:4px;color:#999;cursor:pointer;}
+div.alert-no-loops i.remove-alert-message:hover, div.alert-no-post-content i.remove-alert-message:hover{color:#999;}
+div.alert-no-loops,  div.alert-no-post-content{line-height: 1.2;position:relative;}
+.toplevel_page_dd_layouts div.alert-no-loops, .toplevel_page_dd_layouts div.alert-no-post-content{}
+.save-archives-options-wrap{text-align: right;}
+ul.post-types-list-in-layout-editor-alerted, ul.post-loops-list-in-layout-editor-alerted{border:1px solid;border-color: #fbeed5;background-color: #fcf8e3;}
+ul.post-types-list-in-layout-editor{padding: 0px 0px 10px 10px;}
+.change-layout-use-section li input.buttons-change-update{padding-right:10px!important;padding-left:10px!important;}
+div.dialog-change-use-messages{display: inline-block; margin-right: 10px}
+div.dialog-change-use-messages p{margin:0 0 0 0px;text-align:right;padding:6px 20px 6px 10px;}
+div.dialog-change-use-messages p .toolset-alert-close{top:6px;}
+.close-change-use{float:right;}
+
+ /*overrides for ui tabs styles*/
+.ddl-dialog .ui-widget{font-size:1em;}
+.ddl-dialog .ui-widget-content{background:transparent;border:none;}
+.ddl-dialog .ui-widget-header{border:none;background:transparent;border-bottom:1px solid #ccc;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;}
+.ddl-dialog .ddl-dialog-content-main{border:none;background: transparent;padding-left:0;}
+.ddl-dialog .ui-tabs-nav li.ddl-tab-right {margin-right:0px;}
+.ddl-dialog .ddl-dialog-content-main .ddl-form{border-left:1px solid #ccc;padding:10px;margin-bottom:0;}
+p.desc a.fieldset-inputs{color:#0074a2;}
+
+.individual-pages-wrap .ui-widget-content{background:transparent;border:none;}
+.individual-pages-wrap .ui-widget-header{border:none;background:transparent;margin-bottom: 14px;padding-bottom: 0px;}
+.individual-pages-wrap .ddl-individual-tab{border:none;border:1px solid #ccc;position: relative;top: -3px; background: white;border-radius: 3px;border-top-left-radius: 0px;}
+.individual-pages-wrap .ui-tabs-nav li{padding-bottom:8px;}
+
+.ddl-dialog .ui-slider{border:1px solid #ccc;border-radius: 0px;}
+
+.ddl-dialog .ddl-dialog-content{font-family: "Open Sans";}
+.ddl-dialog .ui-widget, .ddl-dialog .ui-widget input, .ddl-dialog .ui-widget select, .ddl-dialog .ui-widget textarea, .ddl-dialog .ui-widget button{font-family: "Open Sans";}
+.ddl-dialog .ui-widget button.qt-fullscreen{font: 400 20px/1 dashicons;}
+.ddl-dialog .ui-widget-header, .ui-widget-header *{font-weight: normal;}
+.ddl-dialog .ui-widget-content a.fieldset-inputs{color:#0074a2;}
+
+/* Change Layout Use Dialog End*/
+
+
+/* Dialogs Forms END */
+
+.individual-pages-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.individual-pages-list .icon-remove {
+	cursor: pointer;
+}
+
+.individual-pages-list .icon-remove:hover {
+	color: #d54e21;
+}
+
+.ddl-posts-check-list {
+	margin-top: 0px;
+}
+
+.ddl-individual-tab {
+	max-height: 180px;
+	overflow: auto;
+}
+
+.ddl-individual-quick-search {
+	margin-bottom: 5px;
+}
+
+/* RICH CONTENT CELL VISUAL EDITOR */

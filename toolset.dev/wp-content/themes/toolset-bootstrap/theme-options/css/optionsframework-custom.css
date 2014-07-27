@@ -1,0 +1,33 @@
+.option .ico-questionmark {
+	display: inline-block;
+	background: url('../img/ico-questionmark.png') top left no-repeat;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	position: relative;
+	cursor: help;
+	float: left;
+	opacity: .5;
+}
+.option .ico-questionmark.active,
+.option .ico-questionmark:hover {
+	opacity: 1;
+}
+
+#optionsframework .option .controls input.upload_button {
+	width: 60px;
+	height: 23px;
+	line-height: 23px;
+	margin: 1px 0;
+	padding: 0;
+}
+#section-css_loading_method_selected_user_textarea .controls {
+	width:100% !important;
+}
+#css_loading_method_selected_user_textarea {
+	height:300px;
+}
+#optionsframework input.checkbox, #optionsframework input.of-radio {
+	width:15px;
+}
+

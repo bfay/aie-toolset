@@ -1,0 +1,90 @@
+/*
+Theme Name: Toolset Bootstrap
+Author: OnTheGoSystems
+Author URI: http://www.onthegosystems.com/
+Description: Advanced Bootstrap theme for responsive grid sites with Toolset elements.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, white, light, one-column, flexible-width, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+
+Credits to:
+Twitter Bootstrap framework - http://twitter.github.com/bootstrap/
+HTML5 Boilerplate template - http://html5boilerplate.com/
+The Roots theme - http://www.rootstheme.com/
+The Bootstrap theme - http://wordpress.org/extend/themes/the-bootstrap
+rbootstrap - http://rbootstrap.ir/
+*/
+
+/* Add padding to body in fixed navbar is enabled */
+body.menu-fixed-top {
+	padding-top: 40px;
+}
+
+/* fix for fixed menu position when WP admin bar is visible */
+body.menu-fixed-top.admin-bar .navbar-fixed-top {
+	top: 28px;
+}
+
+.post-thumbnail {
+	margin-right: 10px;
+}
+
+/* Styles for classes added by WP Editor*/
+.aligncenter {
+    display:block;
+    margin: 0 auto 10px;
+}
+
+.alignright {
+	display: inline;
+    float:right;
+    margin: 0 0 10px 10px;
+}
+
+.alignleft {
+	display: inline;
+    float:left;
+    margin: 0 10px 10px 0;
+}
+
+/* Styles for WP Gallery inserted using [gallery] shortcode */
+.gallery .clear {
+	clear: both;
+}
+
+.gallery .thumbnail img {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+
+/* Fix for code line breaks */
+.entry-content code {
+	max-width: 100%;
+}
+
+/* Caption */
+.wp-caption {}
+.wp-caption.alignnone {}
+.wp-caption.alignleft {}
+.wp-caption.alignright {}
+.wp-caption img {}
+.wp-caption p.wp-caption-text {}
+
+.bypostauthor{}
+.sticky{}
+.gallery-caption{}
+
+/* WooCommerce General Compatibility CSS*/
+#customer_details input[type="text"] {
+	height:2em;
+}
+.woocommerce .shop_table .coupon input[type="text"] {
+	height:2em;
+}
+.woocommerce .product  .buttons_added .input-text {
+	margin-bottom:0;
+}

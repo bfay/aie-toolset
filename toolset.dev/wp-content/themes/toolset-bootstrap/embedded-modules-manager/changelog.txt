@@ -1,0 +1,40 @@
+Wordpress Plugin: 
+Module Manager, by OnTheGoSystems
+
+Changelog:
+
+1.0
+* Initial release
+
+1.1
+* Added modules library taken from reference sites.
+* Added support for Views 1.3 release.
+* Added support for embedded module manager to be used in such themes like Toolset Bootstrap.
+
+1.2
+* Fixed bugs relating to modules export.
+* Update codes for WooCommerce Views auto-import of modules from reference sites.
+
+1.3
+* Removed plugin headers on embedded to prevent activation error when uploading zip.
+* Fixed bug on cannot reassign auto global variable in PHP 5.4.
+* Fixed bug relating to PHP strict standards of only variables should be passed by reference.
+* Added feature to allow module manager to run local versions of reference sites in testing modules.
+* Updated function on automatic importing of modules to return post ID to be used by other plugins.
+* Fixed issue on step 2 minor display and undefine id PHP notices during modules import.
+* Fixed several PHP warnings and issues on creating temp lock file in both Linux and Windows.
+* Decompressed minified CSS and port the changes to embedded module manager.
+* Added PHP isset changes on checking ID existence from main plugin file to embedded.
+* Changing outdated text in embedded module manager from View Templates terminology to Content Templates.
+* Fixed bug on inline module manager section not checking on correct Views because of HTML entities.
+* Fixed bug on inline module manager section not saving or updating due to jQuery error.
+* Fixed bug on unable to add new module when using Mozilla Firefox browser in Windows operating system.
+
+1.4
+* Removed module manager main minified CSS file and use un-minified version.
+* Unified the CSS of the module manager dev version with the main CSS file.
+* Fixed JS console errors appearing when pointers are not dismissed after fresh installation.
+* Hide define modules screen when no full version of Toolset plugins are activated.
+* List the content of installed modules and link to elements.
+* Do not start the import process if there is no file to import by disabling import button.
+* Style components of an imported Module from the Library.

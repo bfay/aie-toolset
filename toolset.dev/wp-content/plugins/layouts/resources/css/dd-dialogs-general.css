@@ -1,0 +1,241 @@
+/*
+	This file should contain generic dialogs styles only.
+	Styles for dialogs forms are in the dd-forms.css file
+	Styles for specific dialogs are in the dd-dialogs.css file
+ */
+
+/* ------- */
+/* DIALOGS */
+/* ------- */
+
+/* Dialogs global */
+.ddl-dialogs-container {
+	display: none;
+}
+
+.ddl-dialog {
+	position: relative;
+	width: 800px;
+	background: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,.4);
+}
+
+/*
+	Add auto-width class to make dialog width adapt automatically to contents
+	But use it wisely! Dialogs forms are designed for fixed width
+	If auto-width is set you can use only fullwidth forms ( .ddl-form-item-fullwidth class );
+*/
+.ddl-dialog.auto-width {
+	width: auto;
+	min-width: 400px;
+}
+
+	.ddl-dialog-header,
+	.ddl-dialog-content,
+	.ddl-dialog-footer {
+		overflow: hidden;
+		margin: 0;
+		padding: 10px;
+		border: 1px solid #ededed;
+		background: #fafafa;
+	}
+
+	.ddl-dialog-content {
+		overflow-y: auto;
+		padding-right: 20px;
+		max-height: 400px;
+		border-width: 0 1px 0 0;
+		background: #fff;
+	}
+
+	.auto-width .ddl-dialog-content {
+		padding-right: 10px;
+	}
+
+	/* .h-lt-X classes are added dynamicaly to the HTML tag. See more details in dd_layouts_common_scripts.js */
+	.h-lt-1100 .ddl-dialog-content,
+	.h-lt-1100 .layouts-views-loading {
+		max-height: 870px;
+	}
+	.h-lt-1050 .ddl-dialog-content,
+	.h-lt-1050 .layouts-views-loading {
+		max-height: 820px;
+	}
+	.h-lt-1000 .ddl-dialog-content,
+	.h-lt-1000 .layouts-views-loading {
+		max-height: 770px;
+	}
+	.h-lt-950 .ddl-dialog-content,
+	.h-lt-950 .layouts-views-loading {
+		max-height: 720px;
+	}
+	.h-lt-900 .ddl-dialog-content,
+	.h-lt-900 .layouts-views-loading{
+		max-height: 670px;
+	}
+	.h-lt-850 .ddl-dialog-content,
+	.h-lt-850 .layouts-views-loading {
+		max-height: 620px;
+	}
+	.h-lt-800 .ddl-dialog-content,
+	.h-lt-800 .layouts-views-loading {
+		max-height: 570px;
+	}
+	.h-lt-750 .ddl-dialog-content,
+	.h-lt-750 .layouts-views-loading {
+		max-height: 520px;
+	}
+	.h-lt-700 .ddl-dialog-content,
+	.h-lt-700 .layouts-views-loading {
+		max-height: 470px;
+	}
+	.h-lt-650 .ddl-dialog-content,
+	.h-lt-650 .layouts-views-loading {
+		max-height: 420px;
+	}
+	.h-lt-600 .ddl-dialog-content,
+	.h-lt-600 .layouts-views-loading {
+		max-height: 370px;
+	}
+	.h-lt-550 .ddl-dialog-content,
+	.h-lt-550 .layouts-views-loading {
+		max-height: 320px;
+	}
+	.h-lt-500 .ddl-dialog-content,
+	.h-lt-500 .layouts-views-loading {
+		max-height: 220px;
+	}
+
+	.ddl-dialog-content::-webkit-scrollbar {
+		width: 12px;
+		height: 12px;
+		border-left: 1px solid #f1f1f1;
+		background-color: #fafafa;
+	}
+	.ddl-dialog-content::-webkit-scrollbar:hover {
+		background-color: #eee;
+	}
+	.ddl-dialog-content::-webkit-scrollbar-thumb {
+		min-width: 13px;
+		min-height: 12px;
+		background-color: rgba(0, 0, 0, .1);
+	}
+	.ddl-dialog-content::-webkit-scrollbar-thumb:hover {
+		background-color: rgba(0, 0, 0, .2);
+	}
+	.ddl-dialog-content:-webkit-scrollbar-thumb:active {
+		background-color: rgba(0, 0, 0, .3);
+	}
+
+	.h-lt-1100 .ddl-dialog-content.no-scrollbar {
+		padding-right: 20px;
+		max-height: none;
+	}
+
+	.ddl-dialog-content > :first-child {
+		margin-top: 0;
+	}
+
+		/* Dialog tabs */
+		.ddl-dialog .ui-tabs-nav {
+			border-bottom: 1px solid #ddd;
+            overflow: hidden;
+		}
+
+			.ddl-dialog .ui-tabs-nav li {
+				position: relative;
+				top: 1px;
+				display: inline-block;
+				margin: 0 5px 0 0;
+				padding: 5px;
+				outline: none;
+				border: 1px solid #ddd;
+				border-radius: 3px 3px 0 0;
+				background: #eee;
+                float:left;
+			}
+		   .ddl-dialog .ui-tabs-nav .ui-tabs-active {
+				border-bottom: 1px solid #fff;
+				background: #fff;
+		   }
+
+				.ddl-dialog .ui-tabs-nav a {
+					outline: none;
+					color: #333;
+					text-decoration: none;
+				}
+
+		.ddl-popup-tab {
+			border-left: 1px solid #ddd;
+			padding: 10px 0 0 10px;
+		}
+		
+		.ddl-popup-tab-full {
+			margin-top: -14px;
+			margin-bottom: 5px;
+			border: 1px solid #ddd;
+			padding: 10px 0 0 10px;
+		}
+		
+		.ddl-tab-right {
+			float: right !important;
+		}
+		
+		/* Dialog tabs END */
+
+		.ddl-video-toolbar {
+			position: relative;
+			top: -10px;
+			left: -10px;
+			overflow: hidden;
+			margin-right: -30px;
+		}
+
+		.ddl-video-container {
+			margin-bottom: 10px;
+		}
+
+		.ddl-video-container:empty {
+			margin: 0;
+		}
+
+		.ddl-dialog-content-main {
+		}
+		.ddl-dialog-content-main:empty {
+			display: none;
+		}
+
+	.ddl-dialog-header {
+		border-width: 0 0 1px 0;
+	}
+
+		.ddl-dialog-header .icon-remove {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+
+		.ddl-dialog-header .icon-remove:hover {
+			color: #d54e21;
+		}
+
+		.ddl-dialog-header h2 {
+			margin: 0;
+			padding: 0 20px 0 0;
+			font-weight: normal;
+			font-size: 14px;
+		}
+
+	.ddl-dialog-footer {
+		clear: both;
+		text-align: right;
+	}
+
+/* Dialogs global END */
+
+/*
+	This file should contain generic dialogs styles only.
+	Styles for dialogs forms are in the dd-forms.css file
+	Styles for specific dialogs are in the dd-dialogs.css file
+ */

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridList>
+    <item columns="1">
+        <row>
+            <cell size="12">100%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="4">33%</cell>
+            <cell size="4">33%</cell>
+            <cell size="4">33%</cell>
+        </row>
+    </item>
+    <item columns="2">
+        <row>
+            <cell size="6">50%</cell>
+            <cell size="6">50%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+            <cell size="6">50%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="6">50%</cell>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="6">50%</cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="9">75%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="9">75%</cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="4">33%</cell>
+            <cell size="8">66%</cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="8">66%</cell>
+            <cell size="4">33%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="9">
+                <row>
+                    <cell size="4">25%</cell>
+                    <cell size="4">25%</cell>
+                    <cell size="4">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="9">
+                <row>
+                    <cell size="4">25%</cell>
+                    <cell size="4">25%</cell>
+                    <cell size="4">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+            <cell size="6">
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="6">
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+            </cell>
+            <cell size="3">25%</cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="6">
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+            </cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="9">
+                <row>
+                    <cell size="9">50%</cell>
+                    <cell size="3">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="3">25%</cell>
+            <cell size="9">
+                <row>
+                    <cell size="3">25%</cell>
+                    <cell size="9">50%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="9">
+                <row>
+                    <cell size="3">25%</cell>
+                    <cell size="9">50%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="9">
+                <row>
+                    <cell size="9">50%</cell>
+                    <cell size="3">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">75%</cell>
+                </row>
+            </cell>
+            <cell size="3">25%</cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="6">50%</cell>
+            <cell size="6">
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="4">
+        <row>
+            <cell size="6">
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+            </cell>
+            <cell size="6">50%</cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="4">33%</cell>
+            <cell size="8">
+                <row>
+                    <cell size="6">33%</cell>
+                    <cell size="6">33%</cell>
+                </row>
+                <row>
+                    <cell size="12">66%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="8">
+                <row>
+                    <cell size="6">33%</cell>
+                    <cell size="6">33%</cell>
+                </row>
+                <row>
+                    <cell size="12">66%</cell>
+                </row>
+            </cell>
+            <cell size="4">33%</cell>
+        </row>
+    </item>
+    <item columns="2">
+        <row>
+            <cell size="6">50%</cell>
+            <cell size="6">
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="2">
+        <row>
+            <cell size="6">
+                <row>
+                    <cell size="12">50%</cell>
+                </row>
+                <row>
+                    <cell size="6">25%</cell>
+                    <cell size="6">25%</cell>
+                </row>
+            </cell>
+            <cell size="6">50%</cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="4">33%</cell>
+            <cell size="8">
+                <row>
+                    <cell size="12">66%</cell>
+                </row>
+                <row>
+                    <cell size="6">33%</cell>
+                    <cell size="6">33%</cell>
+                </row>
+            </cell>
+        </row>
+    </item>
+    <item columns="3">
+        <row>
+            <cell size="8">
+                <row>
+                    <cell size="12">66%</cell>
+                </row>
+                <row>
+                    <cell size="6">33%</cell>
+                    <cell size="6">33%</cell>
+                </row>
+            </cell>
+            <cell size="4">33%</cell>
+        </row>
+    </item>
+</GridList>

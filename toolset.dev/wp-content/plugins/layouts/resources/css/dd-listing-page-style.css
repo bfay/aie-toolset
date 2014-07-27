@@ -1,0 +1,97 @@
+/*!
+	 * jQuery UI Tooltip 1.9.0
+	 * http://jqueryui.com
+	 *
+	 * Copyright 2012 jQuery Foundation and other contributors
+	 * Released under the MIT license.
+	 * http://jquery.org/license
+	 */
+.ui-tooltip {
+	padding:8px;
+	position:absolute;
+	z-index:10000000;
+	-o-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+	background:white;
+}
+/* Fades and background-images don't work well together in IE6, drop the image */
+* html .ui-tooltip {
+	background-image: none;
+}
+body .ui-tooltip { border-width:2px; }
+/* TOOLTIP END */
+
+
+
+
+/* TABLE GENERAL*/
+table.dd-layouts-list tr th:first-child, table.dd-layouts-list tr td:first-child{width:30px;}
+th.column-bulk-actions{position: relative;}
+th.column-bulk-actions input{margin:0;}
+tr.ddl-groups-heading{background: rgb( 237,237,237 );font-weight:bold;}
+tr.ddl-groups-heading td{line-height: 1.3em}
+td.not-used-yet{}
+table.dd-layouts-list tr th.column-title, table.dd-layouts-list tr td.column-title{padding-left:0;}
+table.dd-layouts-list tr th.column-used-on, table.dd-layouts-list tr td.column-used-on{padding-left:12px;}
+
+/*headings*/
+tr.ddl-groups-heading td{position:relative;height:18px;}
+div.listing-heading-inner-wrap{position:relative;display:block;}
+input.select-all-layouts{position:absolute;top:3px;}
+.ddl-groups-heading .group-name{padding:0 0 0 5px;margin:0;position:absolute;left:15px;}
+.ddl-groups-heading .icon-caret-down, .ddl-groups-heading .icon-caret-up{font-size:24px;cursor:pointer;position:absolute;top:-5px;}
+
+/*links*/
+.strike{text-decoration:line-through;color:#0074a2;}
+.strike a:hover{text-decoration:line-through;color:lightgray;}
+a.views-list-sort i.icon-sort-by-attributes-alt{/*display:none;*/}
+.row-actions span a{cursor:pointer;}
+
+
+/*post types*/
+.wpv-views-listing-page .wpv-views-listing td ul {margin: 0;}
+.wpv-taglike-list li {
+	display: inline-block;
+	background: #e9e9e9;
+	/* float: left; */
+	margin: 5px 10px 5px 0;
+	padding: 2px 8px;
+	vertical-align: bottom;
+}
+
+/*OVERLAY*/
+/* ------- */
+/* Overlay */
+/* ------- */
+.loader-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	background: #000;
+	text-align: center;
+	opacity: .4;
+	width:100%;
+	height:100%;
+	float:left;
+}
+.preloader {
+	position:fixed;
+	z-index: 100;
+	top:50%;
+	left:50%;
+	/*display: inline-block;*/
+	margin: -32px 0 0 -32px;
+	width: 64px;
+	height: 64px;
+	background: url('../images/ajax-loader-overlay2.gif') center center no-repeat;
+}
+
+table.dd-layouts-list i.icon-sort{}
+
+.sort-icon-active{color:#0074a2 !important;}
+.sort-icon-inactive{color:#ccc !important;}

@@ -1,0 +1,75 @@
+Version 1.3
+
+    -Fixed bug on theme options tab not working when using non-English version of WordPress.
+    -Updated HTML5 Shiv version to latest 3.7.2.
+    -Fixed/removed unnecessary header tag HTML if title and meta are disabled in theme options.
+    -Update Module Manager embedded version to 1.4.
+    -Fixed bug on the use of esc_textarea filter on functions.php affecting WordPress editor.
+    -Add .active class on WordPress nav menu li items.
+
+-------------------------------------------------------------------------------------------------------------------
+Version 1.2
+	- Fixed bug on CSS HTML entities display on CSS section in theme options.
+	- Fixed bug on syntax tab editor height not being adjustable.
+	- Fixed issue on syntax tab not being shown as active on the post editor screens.
+	- Changed Toolset Bootstrap theme options page titles help text.
+	- Fixed code intentation for content-page.php.
+	- Fixed wrong JS file was enqueued for LTR languages. RTL JS was enqueued.
+	- Removed external jQuery source. Now we use jQuery shipped with WP core.
+	- Localized some text in the new code added.
+	- Fixed some typo in search.php.
+	- Fixed bug on header widgets not showing on translated pages.
+	- Fixed display of archive header and display the correct date for month and yearly formats.
+	- Updated embedded module manager to version 1.3 to fix fatal error for sites using PHP 5.4.
+    - Removed woocommerce.php in theme directory because its blocking the loading of important Woocommerce hooks used in single products.
+    - Added new hook to removed woocommerce sidebar default loading since Toolset Bootstrap has its own sidebar loading mechanism.
+    - Improve compatibility of Toolset Bootstrap theme with WooCommerce templates and hooks.
+    - Fixed check box improperly rendered on theme options panel in Google Chrome/Chromium browsers.
+    - Fixed issues on sidebar, header and footer widgets area during theme switching when any of them are disabled in theme options.
+    - Added code to resolve issues on corrupted sidebars widgets option settings from old theme versions.
+    - Fixed issues on syntax editor mode in Types WYSIWYG custom fields.
+    - Fixed issues on HTML grid layout tool in Types WYSIWYG custom fields.
+    - Added support for Add media button in syntax mode when using WYSIWYG custom fields for Types.
+    - Cleaned up old code in bootstrap editor JS file.
+    - Transferred wp_header() function immediately before </head> in both header.php and header-layouts.php
+    - Fixed some typo on navigation next and previous link text found in functions.php.
+    - Fixed default sidebar widget behaviour when first activating the theme using WordPress 3.9.
+    - Add multi-depth support on nested menu/hierarchy.
+    - Fixed focus on mouse cursor when inserting grid layouts in different text areas like Types WYSIWYG custom fields.
+    - Fixed correct loading of Bootstrap RTL JS on RTL pages.
+    - Fixed on issue where HTML comments section is still shown even comments are disabled for that post or page.
+    - Added some compatibility CSS styling for WooCommerce.
+		
+-------------------------------------------------------------------------------------------------------------------
+Version 1.1
+	- Added support for grid layout tool in Content Templates.
+	- Added support for custom CSS and loading of CSS from the database.
+	- Added feature to disable sidebars on specific post types.
+	- Removed syntax editor support for WooCommerce admin pages and products.
+	- Allowed credit footer to be translatable using WPML translation configuration file.
+	- Fixed all gettext issues found in the first release.
+    - Added translations to 14 languages. More on the way.
+	- Transferred custom code away from options framework core files.
+	- Added RTL CSS for the theme.
+	- Fixed PHP notices and warnings found in the first release.
+	- Corrected post thumbnails help notice.
+	- Corrected issues on dropdown menus not working.
+	- Fixed bug on pre tags rendering. Some formattings were lost.
+	- Fixed glitches on first version style.css.
+	- Fixed issue on child theme CSS loaded twice.
+	- Fixed issue on nav not displaying if header.php is moved to child theme
+    - Fixed bug on failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden when loading grid with file_get_contents.
+    - Review and tidy templates 
+    - Fixed issue on js file /js/user-scripts.js not enqueued properly.
+    - Updated embedded module manager to the latest version
+    - Fixed bug on post title are not shown by default on search result pages.
+    - Added initial support for Layouts plugin.
+    - Fixed syntax tab editor issues in WordPress 3.8.
+    - Fixed bug on incorrect available columns returned when disabling sidebar on any post types.   
+    - Fixed PHP notices appearing on CRED insert generic fields.
+    - Added feature to disable H1 title only on the homepage.    
+    - Added change log file.
+    
+-------------------------------------------------------------------------------------------------------------------
+Version 1.0
+	- First release
